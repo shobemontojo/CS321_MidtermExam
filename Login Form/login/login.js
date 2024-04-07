@@ -1,20 +1,21 @@
 function login(){
 
-const loginBtn = document.querySelector(".login-btn")
-let userName = document.getElementById("username").value;
-let pass = document.getElementById("password").value;
+    const usName = document.getElementById("useName").value;
+    const pass = document.getElementById("passWord").value;
 
-let dummuser = "admin";
-let dummpass = "123";
+    const dummuser = usName;
+    const dummpass = pass;
 
+//Condition for account authentication
+if(usName==dummuser && pass==dummpass){
 
-if(userName==username && pass==password){
-
-    loginBtn.addEventListener("click", ()=>{
-        window.location.replace = "homepage.html";
-    })
+    window.location.assign("homepage.html");
+    
 
 }
+else{
+    alert("Invalid Information");
+    return;
+}
 
-    
 }
