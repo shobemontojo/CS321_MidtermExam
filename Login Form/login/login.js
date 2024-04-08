@@ -3,8 +3,8 @@ function login(){
     const usName = document.getElementById("useName").value; //getting the value of the username input box
     const pass = document.getElementById("passWord").value; //getting the value of the password inout box
 
-    const dummuser = "admin";
-    const dummpass = "123";
+    const dummuser = "shobemontojo";
+    const dummpass = "123456789";
 
 //Condition for account authentication
 if(usName==dummuser && pass==dummpass){
